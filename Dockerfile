@@ -1,2 +1,6 @@
 FROM node:lts-slim
-RUN npm i && npm dev
+WORKDIR /app
+COPY ./ /app
+RUN npm i
+
+CMD ["npm", "dev"]
