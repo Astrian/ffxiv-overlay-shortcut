@@ -3,4 +3,4 @@ WORKDIR /app
 COPY ./ /app
 RUN npm i
 
-CMD ["npm", "dev"]
+CMD npm run dev
